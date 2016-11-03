@@ -1,5 +1,5 @@
 local host_color='%F{154}'
-if [[ "$MFONTANI_ZSH_ON_MAC" ]]; then
+if [[ "$MFONTANI_ZSH_ON_MAC" == "1" ]]; then
     host_color="$reset_color$fg[blue]"
 else
     host_color="$fg[red]"
