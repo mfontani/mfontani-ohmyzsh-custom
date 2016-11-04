@@ -6,6 +6,10 @@ bindkey '\ee' edit-command-line
 # Ctrl+K should kill until EOL
 bindkey '^K' kill-line
 
+# Fn-left should go to start of line
+bindkey 'OH' beginning-of-line
+bindkey 'OF' end-of-line
+
 # Vim keybindings
 bindkey -v
 
