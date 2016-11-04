@@ -1,3 +1,6 @@
+# Vim keybindings
+bindkey -v
+
 # Use Esc+E to edit the command line
 autoload      edit-command-line
 zle -N        edit-command-line
@@ -10,8 +13,9 @@ bindkey '^K' kill-line
 bindkey 'OH' beginning-of-line
 bindkey 'OF' end-of-line
 
-# Vim keybindings
-bindkey -v
+# alt+left/right should go word by word
+bindkey '[D' backward-word
+bindkey '[C' forward-word
 
 # Use Ctrl-x,Ctrl-l to get the output of the last command
 zmodload -i zsh/parameter
