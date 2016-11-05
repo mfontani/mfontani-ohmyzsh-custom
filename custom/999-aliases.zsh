@@ -10,6 +10,7 @@ alias ddjs="perl -Ilib -MJavaScript::HashRef::Decode=decode_js -lE'use Data::Dum
 
 alias hosts="sudo /usr/bin/vim -u NONE /etc/hosts"
 alias homepage="vim ~/Documents/homepage.html"
+alias wiki="vim ~/Sites/wiki/index.md"
 
 alias R=ranger
 
