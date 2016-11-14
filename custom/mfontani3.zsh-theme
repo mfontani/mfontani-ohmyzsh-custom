@@ -5,8 +5,15 @@ else
     host_color="$fg[red]"
 fi
 
+function mfontani_plenv_version () { }
+if command -v plenv > /dev/null 2>&1; then
+    function mfontani_plenv_version () {
+        plenv version | sed -e 's/ (set.*$//'
+    }
+fi
+
 # Might want to use ➤ instead of $
-PROMPT='%B%F{208}%n%f%{$fg_bold[white]%}@%{$host_color%}%m%f%{$reset_color%} - %{$fg[blue]%}%~%{$fg_bold[yellow]%}$(git-radar --zsh)%{$reset_color%}
+PROMPT='%B%F{208}%n%f%{$fg_bold[white]%}@%{$host_color%}%m%f%{$reset_color%} %{$fg[white]%}$(mfontani_plenv_version)%{$reset_color%} - %{$fg[blue]%}%~%{$fg_bold[yellow]%}$(git-radar --zsh)%{$reset_color%}
 %{$fg[blue]%}$ %{$reset_color%}'
 RPROMPT='%{$fg[blue]%}%{$reset_color%}'
 
