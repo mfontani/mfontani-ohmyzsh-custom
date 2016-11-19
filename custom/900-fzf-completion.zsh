@@ -6,4 +6,6 @@ export FZF_COMPLETION_OPTS='-x'
 export FZF_DEFAULT_OPTS='-x'
 
 # FZF https://github.com/junegunn/fzf
-source ~/.fzf.zsh
+if [ -f ~/.fzf.zsh ]; then
+    source ~/.fzf.zsh
+fi
