@@ -48,6 +48,7 @@ ZSH_THEME="mfontani3"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
+# ~/GIT/mfontani-ohmyzsh-custom/custom/
 ZSH_CUSTOM=~/GIT/mfontani-ohmyzsh-custom/custom/
 
 HOSTNAME=$( hostname )
