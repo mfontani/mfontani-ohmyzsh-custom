@@ -1,4 +1,5 @@
 export EDITOR=nvim
+alias vim=nvim
 
 # if [[ -x /usr/local/bin/brew ]]; then
 #     export EDITOR=$(brew ls macvim | grep Contents/MacOS/Vim)
