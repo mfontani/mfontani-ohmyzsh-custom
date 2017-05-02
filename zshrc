@@ -113,3 +113,4 @@ fi
 # RUST
 # export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"
