@@ -24,3 +24,13 @@ LBUFFER+="$(eval $history[$((HISTCMD-1))])"
 }
 zle -N insert-last-command-output
 bindkey "^X^L" insert-last-command-output
+
+# http://coryklein.com/vi/2015/09/17/a-working-vi-mode-indicator-in-zsh.html
+# ... with changes to support <Up> to continue to search history backwards..
+function zle-keymap-select {
+   VIM_PROMPT="%{$fg_bold[magenta]%} [% NORMAL]%  %{$reset_color%}"
+   RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+   zle reset-prompt
+}
+# faster switch to <Esc>
+export KEYTIMEOUT=1
