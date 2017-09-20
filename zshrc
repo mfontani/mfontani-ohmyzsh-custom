@@ -114,3 +114,7 @@ fi
 # export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/anaconda3/bin:$PATH"
+
+# Upgrading fzf insists on placing this line here, so I'm just going to leave
+# this be.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
