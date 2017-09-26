@@ -17,6 +17,7 @@ alias R=ranger
 alias todo=todo.sh
 
 alias view='vim -R'
+alias vimdiff='vim -d'
 
 # Don't try to glob with zsh so you can do
 # stuff like ga *foo* and correctly have
