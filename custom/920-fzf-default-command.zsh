@@ -20,4 +20,14 @@ fi
 # If we have "fd" - https://github.com/sharkdp/fd - use it
 if [[ -x /usr/local/bin/fd || -x ~/bin/fd ]]; then
     export FZF_DEFAULT_COMMAND='fd --hidden --type f'
+else
+    # The following function overrides will only work if we have fd.
+    exit 0
 fi
+
+_fzf_compgen_path() {
+    fd --hidden --follow --exclude ".git" . "$1"
+}
+_fzf_compgen_dir() {
+    fd --type d --hidden --follow --exclude ".git" . "$1"
+}
