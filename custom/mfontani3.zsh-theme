@@ -2,7 +2,11 @@ local host_color='%F{154}'
 if [[ "$MFONTANI_ZSH_ON_MAC" == "1" ]]; then
     host_color="$reset_color$fg[blue]"
 else
-    host_color="$fg[red]"
+    if [[ $SSH_CLIENT =~ '^10[.]0[.]2[.]2[ ]' ]]; then
+        host_color="$fg[red]WIN"
+    else
+        host_color="$fg[red]"
+    fi
 fi
 
 function mfontani_plenv_version () { }
