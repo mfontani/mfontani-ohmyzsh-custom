@@ -119,3 +119,9 @@ export PATH="$HOME/anaconda3/bin:$PATH"
 # Upgrading fzf insists on placing this line here, so I'm just going to leave
 # this be.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# This needs to be at the end of everything, as syntax highlight overrides a
+# ton of ZLE functions
+if [[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] then
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
