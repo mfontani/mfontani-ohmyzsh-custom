@@ -58,6 +58,7 @@ export HOSTNAME
 # environment variable.
 if [[ $HOSTNAME == Iride.local ]]; then
     export MFONTANI_ZSH_ON_MAC=1
+    alias mux=tmuxinator
 else
     export MFONTANI_ZSH_ON_MAC=0
 fi
