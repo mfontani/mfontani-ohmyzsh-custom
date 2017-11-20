@@ -6,5 +6,10 @@ if [[ -e /usr/local/bin/rbenv ]]; then
     eval "$(rbenv init -)";
 
     # Gems installed via gem install --user-install NAME
-    export PATH=/Users/marco/.gem/ruby/2.0.0/bin:$PATH
+    if [[ -d ~/.gem/ruby/2.0.0/bin ]]; then
+        export PATH=~/.gem/ruby/2.0.0/bin:$PATH
+    fi
+    if [[ -d ~/.gem/ruby/2.3.0/bin ]]; then
+        export PATH=~/.gem/ruby/2.3.0/bin:$PATH
+    fi
 fi
