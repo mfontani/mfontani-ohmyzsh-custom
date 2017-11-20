@@ -69,9 +69,9 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
 if [[ "$MFONTANI_ZSH_ON_MAC" == "1" ]]; then
-    plugins=(osx vi-mode brew rvm ruby bundler zsh-syntax-highlighting history-substring-search git git-extras go golang redis-cli rsync cpanm perl curl vagrant)
+    plugins=(osx tmuxinator vi-mode brew rvm ruby bundler zsh-syntax-highlighting history-substring-search git git-extras go golang redis-cli rsync cpanm perl curl vagrant)
 else
-    plugins=(    vi-mode      rvm ruby bundler zsh-syntax-highlighting history-substring-search git git-extras go golang redis-cli rsync cpanm perl curl vagrant)
+    plugins=(               vi-mode      rvm ruby bundler zsh-syntax-highlighting history-substring-search git git-extras go golang redis-cli rsync cpanm perl curl vagrant)
 fi
 
 source $ZSH/oh-my-zsh.sh
