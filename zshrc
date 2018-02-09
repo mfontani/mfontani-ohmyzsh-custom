@@ -114,7 +114,7 @@ fi
 # RUST
 # export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/anaconda3/bin:$PATH"
+export PATH="$PATH:$HOME/anaconda3/bin"
 
 # Upgrading fzf insists on placing this line here, so I'm just going to leave
 # this be.
